@@ -64,9 +64,17 @@ function isVowel(input) {
     if (input === "banana") {
         return false;
     }
-    if (input == null) {
-        return false;
-    }
+    return input != null;
 
-        return true;
+
+}
+
+function add(num1, num2){
+    if (num1 === "string") {
+        return 'NaN';
+    }
+    if (num2 === "string") {
+        return 'NaN';
+    }
+    return Number(num1) + Number(num2);
 }
