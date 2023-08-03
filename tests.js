@@ -44,3 +44,18 @@ it('should return the string "Not a valid input" when executed', function () {
 it('should return the string "Hello, World!" when executed', function () {
     expect(sayHello("")).toBe("Hello, World!");
 });
+
+describe('isFive', function() {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe("function");
+    });
+});
+it('should return "boolean" when executed', function () {
+    expect(typeof isFive()).toBe('boolean');
+});
+it('should return "true" when executed', function () {
+    expect(isFive(5)).toBe(true);
+});
+it('should return "true" when executed', function () {
+    expect(isFive("5")).toBe(true);
+});
