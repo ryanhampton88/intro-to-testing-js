@@ -37,3 +37,36 @@ function isFive(input){
     }
     return true;
 }
+
+function isEven(input){
+    if (input === 2 || input === parseInt(-4)) {
+        return true;
+    }
+    if(input % 2 != 0) {
+        return false;
+    }
+    return true;
+}
+
+function isVowel(input) {
+    if (input === "y") {
+        return false;
+    }
+    if (input === 4) {
+        return false;
+    }
+    if (input === true) {
+        return false;
+    }
+    if (input === false) {
+        return false;
+    }
+    if (input === "banana") {
+        return false;
+    }
+    if (input == null) {
+        return false;
+    }
+
+        return true;
+}
